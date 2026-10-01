@@ -1,0 +1,1 @@
+export function sucesso(titulo,texto){if(window.Swal)Swal.fire({icon:'success',title:titulo,text:texto,confirmButtonColor:'#0d4c68'});else alert(`${titulo}: ${texto}`)}export function erro(titulo,texto){if(window.Swal)Swal.fire({icon:'error',title:titulo,text:texto,confirmButtonColor:'#e84d6a'});else alert(`${titulo}: ${texto}`)}

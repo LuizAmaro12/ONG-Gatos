@@ -1,0 +1,1 @@
+export function salvarDados(chave,dados){localStorage.setItem(chave,JSON.stringify(dados))}export function carregarDados(chave,padrao=[]){try{return JSON.parse(localStorage.getItem(chave))??padrao}catch{return padrao}}export function salvarVoluntario(v){const lista=carregarDados('voluntarios',[]);lista.push(v);salvarDados('voluntarios',lista)}
